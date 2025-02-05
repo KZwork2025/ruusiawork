@@ -65,6 +65,15 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
 .contact-buttons {
     display: flex;
     justify-content: center;
@@ -79,20 +88,20 @@ section {
 .btn-contact {
     display: flex;
     align-items: center;
-    padding: 1.5rem 2.5rem;
+    padding: 1.2rem 2rem;
     border-radius: 15px;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     transition: all 0.3s ease;
-    min-width: 250px;
+    min-width: 220px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 2px solid var(--gold);
 }
 
 .btn-contact i {
-    font-size: 3rem;
-    margin-right: 1.5rem;
+    font-size: 2.5rem;
+    margin-right: 1rem;
 }
 
 .btn-content {
@@ -102,14 +111,14 @@ section {
 }
 
 .btn-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
     color: var(--gold);
 }
 
 .btn-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
     opacity: 0.9;
     font-weight: normal;
 }
