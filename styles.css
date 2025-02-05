@@ -77,72 +77,59 @@ section {
 .contact-buttons {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 3rem 0;
-    padding: 2rem;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 15px;
     backdrop-filter: blur(10px);
 }
 
 .btn-contact {
     display: flex;
     align-items: center;
-    padding: 1.2rem 2rem;
-    border-radius: 15px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     transition: all 0.3s ease;
-    min-width: 220px;
+    min-width: 200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 2px solid var(--gold);
 }
 
-.btn-contact i {
-    font-size: 2.5rem;
-    margin-right: 1rem;
-}
-
 .btn-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-left: 10px;
 }
 
 .btn-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.2rem;
-    color: var(--gold);
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 2px;
 }
 
 .btn-subtitle {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    font-weight: normal;
-}
-
-.btn-contact:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    border-color: var(--gold-light);
+    display: block;
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
 
 .btn-telegram {
-    background: linear-gradient(135deg, rgba(0, 136, 204, 0.9) 0%, rgba(0, 153, 230, 0.9) 100%);
-}
-
-.btn-telegram:hover {
-    background: linear-gradient(135deg, rgba(0, 153, 230, 0.95) 0%, rgba(0, 170, 255, 0.95) 100%);
+    background: linear-gradient(45deg, #0088cc, #0099ff);
 }
 
 .btn-whatsapp {
-    background: linear-gradient(135deg, rgba(37, 211, 102, 0.9) 0%, rgba(44, 230, 115, 0.9) 100%);
+    background: linear-gradient(45deg, #25d366, #128c7e);
 }
 
-.btn-whatsapp:hover {
-    background: linear-gradient(135deg, rgba(44, 230, 115, 0.95) 0%, rgba(51, 255, 128, 0.95) 100%);
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-contact i {
+    font-size: 1.5rem;
 }
 
 /* Для мобильных устройств */
