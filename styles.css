@@ -77,74 +77,75 @@ section {
 .contact-buttons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 2rem 0;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
     backdrop-filter: blur(10px);
 }
 
 .btn-contact {
     display: flex;
     align-items: center;
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
+    padding: 1.5rem 2.5rem;
+    border-radius: 15px;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     transition: all 0.3s ease;
-    min-width: 200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border: 2px solid var(--gold);
+    min-width: 280px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-content {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .btn-title {
     display: block;
-    font-size: 1rem;
-    margin-bottom: 2px;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .btn-subtitle {
     display: block;
-    font-size: 0.8rem;
-    opacity: 0.8;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .btn-telegram {
-    background: linear-gradient(45deg, #0088cc, #0099ff);
+    background: linear-gradient(45deg, #0088cc, #00a2ff);
+    border: none;
 }
 
 .btn-whatsapp {
-    background: linear-gradient(45deg, #25d366, #128c7e);
+    background: linear-gradient(45deg, #25d366, #00b341);
+    border: none;
 }
 
 .btn-contact:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .btn-contact i {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-/* Для мобильных устройств */
 @media (max-width: 768px) {
     .contact-buttons {
         flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        padding: 1.5rem;
+        gap: 1rem;
+        padding: 1rem;
     }
-
+    
     .btn-contact {
         width: 100%;
-        max-width: 300px;
-        justify-content: center;
+        padding: 1rem 1.5rem;
     }
 }
 
