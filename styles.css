@@ -69,25 +69,30 @@ section {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 2rem 0 3rem;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
 }
 
 .btn-contact {
     display: flex;
     align-items: center;
-    padding: 1.2rem 2rem;
+    padding: 1.5rem 2.5rem;
     border-radius: 15px;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     transition: all 0.3s ease;
-    min-width: 220px;
+    min-width: 250px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--gold);
 }
 
 .btn-contact i {
-    font-size: 2.5rem;
-    margin-right: 1rem;
+    font-size: 3rem;
+    margin-right: 1.5rem;
 }
 
 .btn-content {
@@ -97,40 +102,38 @@ section {
 }
 
 .btn-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--gold);
 }
 
 .btn-subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0.9;
     font-weight: normal;
 }
 
 .btn-contact:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: var(--gold-light);
 }
 
 .btn-telegram {
-    background: linear-gradient(135deg, #0088cc 0%, #0099e6 100%);
-    border: 2px solid #0088cc;
+    background: linear-gradient(135deg, rgba(0, 136, 204, 0.9) 0%, rgba(0, 153, 230, 0.9) 100%);
 }
 
 .btn-telegram:hover {
-    background: linear-gradient(135deg, #0099e6 0%, #00aaff 100%);
-    border-color: #00aaff;
+    background: linear-gradient(135deg, rgba(0, 153, 230, 0.95) 0%, rgba(0, 170, 255, 0.95) 100%);
 }
 
 .btn-whatsapp {
-    background: linear-gradient(135deg, #25D366 0%, #2ce673 100%);
-    border: 2px solid #25D366;
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.9) 0%, rgba(44, 230, 115, 0.9) 100%);
 }
 
 .btn-whatsapp:hover {
-    background: linear-gradient(135deg, #2ce673 0%, #33ff80 100%);
-    border-color: #33ff80;
+    background: linear-gradient(135deg, rgba(44, 230, 115, 0.95) 0%, rgba(51, 255, 128, 0.95) 100%);
 }
 
 /* Для мобильных устройств */
@@ -138,7 +141,8 @@ section {
     .contact-buttons {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 1.5rem;
     }
 
     .btn-contact {
