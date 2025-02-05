@@ -65,6 +65,49 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-contact {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn-contact i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.btn-contact:hover {
+    transform: translateY(-3px);
+}
+
+.btn-telegram {
+    background-color: #0088cc;
+}
+
+.btn-telegram:hover {
+    background-color: #0099e6;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #2ce673;
+}
+
 /* Advantages */
 .advantages-grid {
     display: grid;
