@@ -5,84 +5,92 @@
 }
 
 :root {
-    --primary-color: #1A5F7A;     /* Темно-синий */
-    --secondary-color: #159895;   /* Бирюзовый */
-    --accent-color: #57C5B6;      /* Светло-бирюзовый */
-    --text-color: #F8F9FA;        /* Почти белый */
-    --background-color: #0E2954;  /* Темно-синий фон */
+    --gold: #FFD700;
+    --gold-light: #FFE55C;
+    --gold-dark: #B8860B;
+    --black: #000000;
+    --black-light: #1A1A1A;
+    --white: #FFFFFF;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--black);
+    color: var(--white);
     margin: 0;
     padding: 0;
 }
 
-.luxury-container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
-.luxury-header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    border-bottom: 2px solid var(--secondary-color);
+    padding: 30px 0;
+    border-bottom: 2px solid var(--gold);
 }
 
 .logo h1 {
-    color: var(--accent-color);
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
     font-size: 2.5rem;
     margin-bottom: 5px;
+    letter-spacing: 2px;
 }
 
 .logo p {
-    color: var(--text-color);
+    color: var(--gold-light);
     font-size: 1rem;
-    opacity: 0.8;
+    letter-spacing: 1px;
 }
 
-.luxury-nav {
+nav {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--white);
     font-weight: 500;
     transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-link:hover {
-    color: var(--accent-color);
+    color: var(--gold);
 }
 
-.hero-luxury {
+.hero {
     text-align: center;
-    padding: 80px 0;
-    background: linear-gradient(135deg, var(--background-color), rgba(14, 41, 84, 0.9));
+    padding: 100px 0;
+    background: linear-gradient(to bottom, var(--black-light), var(--black));
+    border-bottom: 1px solid var(--gold-dark);
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
-    color: var(--accent-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--gold);
     margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    color: var(--text-color);
-    margin-bottom: 30px;
-    opacity: 0.9;
+    color: var(--gold-light);
+    margin-bottom: 40px;
+    letter-spacing: 1px;
 }
 
-.cta-buttons {
+.action-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -90,106 +98,158 @@ body {
 
 .btn {
     text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 5px;
+    padding: 15px 30px;
+    border-radius: 3px;
     font-weight: 600;
     transition: all 0.3s ease;
-    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+    background-color: var(--gold);
+    color: var(--black);
+    border: 2px solid var(--gold);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    color: var(--gold);
+    border: 2px solid var(--gold);
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    opacity: 0.9;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
 }
 
-.luxury-features {
+.features {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
-    background-color: rgba(21, 94, 117, 0.2);
+    padding: 80px 0;
+    background-color: var(--black-light);
 }
 
-.feature-card {
+.feature {
     text-align: center;
     flex: 1;
-    padding: 0 20px;
+    padding: 0 30px;
+    border-right: 1px solid var(--gold-dark);
+}
+
+.feature:last-child {
+    border-right: none;
 }
 
 .feature-icon {
     font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    color: var(--gold);
     margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
 }
 
-.feature-card h3 {
-    color: var(--accent-color);
-    margin-bottom: 10px;
+.feature p {
+    color: var(--white);
+    opacity: 0.9;
 }
 
-.feature-card p {
-    color: var(--text-color);
-    opacity: 0.8;
-}
-
-.luxury-cities {
-    background-color: var(--background-color);
-    padding: 60px 0;
+.about {
+    padding: 80px 0;
     text-align: center;
+    background: linear-gradient(to bottom, var(--black), var(--black-light));
 }
 
-.luxury-cities h2 {
-    color: var(--accent-color);
+.about h2 {
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
     margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
-.cities-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
-.city-card {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 15px;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--black-light);
 }
 
-.city-card:hover {
-    transform: scale(1.05);
-    background-color: var(--secondary-color);
+.contact h2 {
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
-.luxury-footer {
-    background-color: rgba(14, 41, 84, 0.5);
-    color: var(--text-color);
+.contact-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--gold);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: 2px solid var(--gold);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--gold-light);
     text-align: center;
     padding: 20px 0;
-    font-size: 0.9rem;
+    border-top: 1px solid var(--gold-dark);
 }
 
 @media (max-width: 768px) {
-    .luxury-header, .luxury-features, .cities-grid {
+    header {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 
-    .luxury-features {
-        gap: 30px;
+    nav {
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .cities-grid {
-        grid-template-columns: 1fr;
+    .features {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .feature {
+        border-right: none;
+        border-bottom: 1px solid var(--gold-dark);
+        padding-bottom: 40px;
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
     }
 }
